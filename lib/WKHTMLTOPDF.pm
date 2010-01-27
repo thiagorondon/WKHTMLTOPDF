@@ -81,13 +81,13 @@ Set orientation to Landscape or Portrait.
 
 has 'orientation' => (is => 'rw', isa => 'Str');
 
-=head3 page-size
+=head3 page_size
 
 Set paper size to: A4, Letter, etc.
 
 =cut
 
-has 'page-size' => (is => 'rw', isa => 'Str');
+has 'page_size' => (is => 'rw', isa => 'Str');
 
 =head3 proxy
 
@@ -113,13 +113,13 @@ HTTP Authentication password.
 
 has 'password' => (is => 'rw', isa => 'Str');
 
-=head3 custom-header
+=head3 custom_header
 
 Set an additional HTTP header (repeatable).
 
 =cut
 
-has 'custom-header' => ( is => 'rw', isa => 'Str');
+has 'custom_header' => ( is => 'rw', isa => 'Str');
 
 =head3 book
 
@@ -137,13 +137,13 @@ Use html document as cover. It will be inserted before the toc with no headers a
 
 has 'cover' => (is => 'rw', isa => 'Str');
 
-=head3 default-header
+=head3 default_header
 
 Add a default header, with the name of the page to the left, and the page number to the right, this is short for: --header-left='[webpage]' --header-right='[page]/[toPage]' --top 2cm --header-line.
 
 =cut
 
-has 'default-header' => (is => 'rw', isa => 'Bool', default => 0);
+has 'default_header' => (is => 'rw', isa => 'Bool', default => 0);
 
 =head3 toc
 
@@ -161,13 +161,13 @@ Change the dpi explicitly (this has no effect on X11 based systems).
 
 has 'dpi' => (is => 'rw', isa => 'Str');
 
-=head3 disable-javascript
+=head3 disable_javascript
 
 Do not allow web pages to run javascript.
 
 =cut
 
-has 'disable-javascript' => (is => 'rw', isa => 'Bool', default => 0);
+has 'disable_javascript' => (is => 'rw', isa => 'Bool', default => 0);
 
 =head3 grayscale
 
@@ -185,53 +185,53 @@ Generates lower quality pdf/ps. Useful to shrink the result document space.
 
 has 'lowquality' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 margin-bottom
+=head3 margin_bottom
 
 Set the page bottom margin (default 10mm).
 
 =cut
 
-has 'margin-bottom' => (is => 'rw', isa => 'Str');
+has 'margin_bottom' => (is => 'rw', isa => 'Str');
 
-=head3 margin-left
+=head3 margin_left
 
 Set the page left margin (default 10mm).
 
 =cut
 
-has 'margin-left' => (is => 'rw', isa => 'Str');
+has 'margin_left' => (is => 'rw', isa => 'Str');
 
-=head3 margin-right
+=head3 margin_right
 
 Set the page right margin (default 10mm).
 
 =cut
 
-has 'margin-right' => (is => 'rw', isa => 'Str');
+has 'margin_right' => (is => 'rw', isa => 'Str');
 
-=head3 margin-top
+=head3 margin_top
 
 Set the page top margin (default 10mm).
 
 =cut
 
-has 'margin-top' => (is => 'rw', isa => 'Str');
+has 'margin_top' => (is => 'rw', isa => 'Str');
 
-=head3 redirect-delay
+=head3 redirect_delay
 
 Wait some milliseconds for js-redirects (default 200).
 
 =cut
 
-has 'redirect-delay' => (is => 'rw', isa => 'Int');
+has 'redirect_delay' => (is => 'rw', isa => 'Int');
 
-=head3 enable-plugins
+=head3 enable_plugins
 
 Enable installed plugins (such as flash).
 
 =cut
 
-has 'enable-plugins' => ( is => 'rw', isa => 'Bool', default => 0);
+has 'enable_plugins' => ( is => 'rw', isa => 'Bool', default => 0);
 
 =head3 zoom
 
@@ -241,53 +241,53 @@ Use this zoom factor (default 1).
 
 has 'zoom' => (is => 'rw', isa => 'Str');
 
-=head3 disable-internal-links
+=head3 disable_internal_links
 
 Do no make local links.
 
 =cut
 
-has 'disable-internal-links' => (is => 'rw', isa => 'Bool', default => 0);
+has 'disable_internal_links' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 disable-external-links
+=head3 disable_external_links
 
 Do no make links to remote web pages.
 
 =cut
 
-has 'disable-external-links' => (is => 'rw', isa => 'Bool', default => 0);
+has 'disable_external_links' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 print-media-type
+=head3 print_media_type
 
 Use print media-type instead of screen.
 
 =cut
 
-has 'print-media-type' => (is => 'rw', isa => 'Bool', default => 0);
+has 'print_media_type' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 page-offset
+=head3 page_offset
 
 Set the starting page number (default 1).
 
 =cut
 
-has 'page-offset' => (is => 'rw', isa => 'Int');
+has 'page_offset' => (is => 'rw', isa => 'Int');
 
-=head3 disable-smart-shrinking 
+=head3 disable_smart_shrinking 
 
 Disable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio none constant.
 
 =cut
 
-has 'disable-smart-shrinking' => (is => 'rw', isa => 'Bool', default => 0);
+has 'disable_smart_shrinking' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 use-xserver
+=head3 use_xserver
 
 Use the X server (some plugins and other stuff might not work without X11).
 
 =cut
 
-has 'use-xserver' => (is => 'rw', isa => 'Bool', default => 0);
+has 'use_xserver' => (is => 'rw', isa => 'Bool', default => 0);
 
 =head3 enconding
 
@@ -297,322 +297,322 @@ Set the default text encoding, for input.
 
 has 'encoding' => ( is => 'rw', isa => 'Str');
 
-=head3 no-background
+=head3 no_background
 
 Do not print background.
 
 =cut
 
-has 'no-background' => (is => 'rw', isa => 'Bool', default => 0);
+has 'no_background' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 user-style-sheet
+=head3 user_style_sheet
 
 Specify a user style sheet, to load with every page.
 
 =cut
 
-has 'user-style-sheet' => (is => 'rw', isa => 'Str');
+has 'user_style_sheet' => (is => 'rw', isa => 'Str');
 
 =head2 Headers and footer options
 
-=head3 footer-center
+=head3 footer_center
 
 Centered footer text.
 
 =cut
 
-has 'footer-center' => (is => 'rw', isa => 'Str');
+has 'footer_center' => (is => 'rw', isa => 'Str');
 
-=head3 footer-font-name
+=head3 footer_font_name
 
 Set footer font name (default Arial)
 
 =cut
 
-has 'footer-font-name' => (is => 'rw', isa => 'Str');
+has 'footer_font_name' => (is => 'rw', isa => 'Str');
 
-=head3 footer-font-size
+=head3 footer_font_size
 
 Set footer font size (default 11)
 
 =cut
 
-has 'footer-font-size' => (is => 'rw', isa => 'Int');
+has 'footer_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 footer-left
+=head3 footer_left
 
 Left aligned footer text.
 
 =cut
 
-has 'footer-left' => (is => 'rw', isa => 'Str');
+has 'footer_left' => (is => 'rw', isa => 'Str');
 
-=head3 footer-line
+=head3 footer_line
 
 Display line above the footer
 
 =cut
 
-has 'footer-line' => (is => 'rw', isa => 'Bool', default => 0);
+has 'footer_line' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 footer-right
+=head3 footer_right
 
 Right aligned footer text.
 
 =cut
 
-has 'footer-right' => (is => 'rw', isa => 'Str');
+has 'footer_right' => (is => 'rw', isa => 'Str');
 
-=head3 footer-spacing
+=head3 footer_spacing
 
 Spacing between footer and content in mm (default 0).
 
 =cut
 
-has 'footer-spacing' => (is => 'rw', isa => 'Str');
+has 'footer_spacing' => (is => 'rw', isa => 'Str');
 
-=head3 footer-html
+=head3 footer_html
 
 Adds a html footer.
 
 =cut
 
-has 'footer-html' => (is => 'rw', isa => 'Str');
+has 'footer_html' => (is => 'rw', isa => 'Str');
 
 
-=head3 header-center
+=head3 header_center
 
 Centered header text.
 
 =cut
 
-has 'header-center' => (is => 'rw', isa => 'Str');
+has 'header_center' => (is => 'rw', isa => 'Str');
 
-=head3 header-font-name
+=head3 header_font_name
 
 Set header font name (default Arial)
 
 =cut
 
-has 'header-font-name' => (is => 'rw', isa => 'Str');
+has 'header_font_name' => (is => 'rw', isa => 'Str');
 
-=head3 header-font-size
+=head3 header_font_size
 
 Set header font size (default 11)
 
 =cut
 
-has 'header-font-size' => (is => 'rw', isa => 'Int');
+has 'header_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 header-left
+=head3 header_left
 
 Left aligned header text.
 
 =cut
 
-has 'header-left' => (is => 'rw', isa => 'Str');
+has 'header_left' => (is => 'rw', isa => 'Str');
 
-=head3 header-line
+=head3 header_line
 
 Display line above the header.
 
 =cut
 
-has 'header-line' => (is => 'rw', isa => 'Bool', default => 0);
+has 'header_line' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 header-right
+=head3 header_right
 
 Right aligned header text.
 
 =cut
 
-has 'header-right' => (is => 'rw', isa => 'Str');
+has 'header_right' => (is => 'rw', isa => 'Str');
 
-=head3 header-spacing
+=head3 header_spacing
 
 Spacing between header and content in mm (default 0).
 
 =cut
 
-has 'header-spacing' => (is => 'rw', isa => 'Str');
+has 'header_spacing' => (is => 'rw', isa => 'Str');
 
-=head3 header-html
+=head3 header_html
 
 Adds a html header header.
 
 =cut
 
-has 'header-html' => (is => 'rw', isa => 'Str');
+has 'header_html' => (is => 'rw', isa => 'Str');
 
 =head2 Table of content options
 
-=head3 toc-font-name
+=head3 toc_font_name
 
 Set the font used for the toc (default Arial)
 
 =cut
 
-has 'toc-font-name' => (is => 'rw', isa => 'Str');
+has 'toc_font_name' => (is => 'rw', isa => 'Str');
 
-=head3 toc-no-dots
+=head3 toc_no_dots
 
 Do not use dots, in the toc
 
 =cut
 
-has 'toc-no-dots' => (is => 'rw', isa => 'Bool');
+has 'toc_no_dots' => (is => 'rw', isa => 'Bool');
 
-=head3 toc-depth
+=head3 toc_depth
 
 Set the depth of the toc (default 3).
 
 =cut
 
-has 'toc-depth' => (is => 'rw', isa => 'Int');
+has 'toc_depth' => (is => 'rw', isa => 'Int');
 
-=head3 toc-header-text
+=head3 toc_header_text
 
 The header text of the toc (default Table Of Contents).
 
 =cut
 
-has 'toc-header-text' => (is => 'rw', isa => 'Str');
+has 'toc_header_text' => (is => 'rw', isa => 'Str');
 
-=head3 toc-header-fs
+=head3 toc_header_fs
 
 The font size of the toc header (default 15).
 
 =cut
 
-has 'toc-hedaer-fs' => (is => 'rw', isa => 'Int');
+has 'toc_hedaer_fs' => (is => 'rw', isa => 'Int');
 
-=head3 toc-disable-links
+=head3 toc_disable_links
 
 Do not link from toc to sections
 
 =cut
 
-has 'toc-disable-links' => (is => 'rw', isa => 'Bool', default => 0);
+has 'toc_disable_links' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 toc-disable-back-links 
+=head3 toc_disable_back_links 
 
 Do not link from section header to toc.
 
 =cut
 
-has 'toc-disable-back-links' => (is => 'rw', isa => 'Bool', default => 0);
+has 'toc_disable_back_links' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 toc-l1-font-size
+=head3 toc_l1_font_size
 
 Set the font size on level 1 of the toc (default 12)
 
 =cut
 
-has 'toc-l1-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l1_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l1-indentation
+=head3 toc_l1_indentation
 
 Set indentation on level 1 of the toc (default 0)
 
 =cut
 
-has 'toc-l1-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l1_indentation' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l2-font-size
+=head3 toc_l2_font_size
 
 Set the font size on level 2 of the toc (default 10)
 
 =cut
 
-has 'toc-l2-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l2_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l2-indentation
+=head3 toc_l2_indentation
 
 Set indentation on level 2 of the toc (default 20)
 
 =cut
 
-has 'toc-l2-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l2_indentation' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l3-font-size
+=head3 toc_l3_font_size
 
 Set the font size on level 3 of the toc (default 8)
 
 =cut
 
-has 'toc-l3-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l3_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l3-indentation
+=head3 toc_l3_indentation
 
 Set indentation on level 3 of the toc (default 40)
 
 =cut
 
-has 'toc-l3-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l3_indentation' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l4-font-size
+=head3 toc_l4_font_size
 
 Set the font size on level 6 of the toc (default 6)
 
 =cut
 
-has 'toc-l4-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l4_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l4-indentation
+=head3 toc_l4_indentation
 
 Set indentation on level 4 of the toc (default 6)
 
 =cut
 
-has 'toc-l4-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l4_indentation' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l5-font-size
+=head3 toc_l5_font_size
 
 Set the font size on level 5 of the toc (default 4)
 
 =cut
 
-has 'toc-l5-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l5_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l5-indentation
+=head3 toc_l5_indentation
 
 Set indentation on level 5 of the toc (default 80)
 
 =cut
 
-has 'toc-l5-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l5_indentation' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l6-font-size
+=head3 toc_l6_font_size
 
 Set the font size on level 6 of the toc (default 2)
 
 =cut
 
-has 'toc-l6-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l6_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l6-indentation
+=head3 toc_l6_indentation
 
 Set indentation on level 6 of the toc (default 100)
 
 =cut
 
-has 'toc-l6-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l6_indentation' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l7-font-size
+=head3 toc_l7_font_size
 
 Set the font size on level 7 of the toc (default 0)
 
 =cut
 
-has 'toc-l7-font-size' => (is => 'rw', isa => 'Int');
+has 'toc_l7_font_size' => (is => 'rw', isa => 'Int');
 
-=head3 toc-l7-indentation
+=head3 toc_l7_indentation
 
 Set indentation on level 7 of the toc (default 120)
 
 =cut
 
-has 'toc-l7-indentation' => (is => 'rw', isa => 'Int');
+has 'toc_l7_indentation' => (is => 'rw', isa => 'Int');
 
 =head2 Outline options
 
@@ -624,13 +624,13 @@ Put an outline into the pdf.
 
 has 'outline' => (is => 'rw', isa => 'Bool', default => 0);
 
-=head3 outline-depth
+=head3 outline_depth
 
 Set the depth of the outline (default 4).
 
 =cut
 
-has 'outline-depth' => (is => 'rw', isa => 'Int');
+has 'outline_depth' => (is => 'rw', isa => 'Int');
 
 =head1 METHODS
 
